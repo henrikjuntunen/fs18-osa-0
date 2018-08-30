@@ -1,0 +1,21 @@
+﻿https://www.websequencediagrams.com/
+
+
+käyttäjä -> näppäimistö: käyttäjä kirjoittaa "Nootti" tekstikenttään
+näppäimistö -> näyttö:
+käyttäjä -> näppäimistö: käyttäjä klikkaa "Talleta" painiketta
+näppäimistö -> näyttö:
+näyttö -> selain:
+note left of selain: https://fullstack-exampleapp.herokuapp.com/notes
+selain -> palvelin: send "Nootti" uusi nootti
+selain -> palvelin: ask for notes.html
+palvelin -> selain: document notes.html
+selain -> palvelin: ask for main.css
+palvelin -> selain: document main.css
+palvelin -> palvelin: run javascript main.js code
+selain -> palvelin: ask for main.js
+palvelin -> selain: javascript main.js
+selain -> palvelin: ask for data.json
+palvelin -> selain: json data.json
+selain -> selain: render data.json
+selain -> näyttö: näytä renderöinnin tulos

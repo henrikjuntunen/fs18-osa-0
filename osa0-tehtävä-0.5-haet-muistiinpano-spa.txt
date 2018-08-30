@@ -1,0 +1,19 @@
+﻿https://www.websequencediagrams.com/
+
+
+käyttäjä -> näppäimistö: käyttäjä kirjoittaa "https://fullstack-exampleapp.herokuapp.com/spa
+" osoitekenttään
+näppäimistö -> näyttö:
+näyttö -> selain:
+note left of selain: https://fullstack-exampleapp.herokuapp.com/spa
+selain -> palvelin: ask for spa.html
+palvelin -> selain: document spa.html
+selain -> palvelin: ask for main.css
+palvelin -> selain: document main.css
+palvelin -> palvelin: run javascript spa.js code
+selain -> palvelin: ask for spa.js
+palvelin -> selain: javascript spa.js
+selain -> palvelin: ask for data.json
+palvelin -> selain: json data.json
+selain -> selain: render data.json
+selain -> näyttö: näytä renderöinnin tulos
